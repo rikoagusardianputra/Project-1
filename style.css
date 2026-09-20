@@ -1,0 +1,355 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #ffff;
+    --text: #000000;
+    --card: #052659;
+    --navbar: #051525;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--navbar);
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 60px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.logo {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    color: rgb(209, 203, 203);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav ul li:nth-child(5) a {
+    background-color: #052659;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li:nth-child(5) a i {
+    font-size: 1.2rem;
+}
+
+/* MAIN */
+
+.container-section-1 {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.container-section-1 img {
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    justify-self: center;
+}
+
+.isi-container-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#ideas {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#ideas span{
+    color: #1a3d72;
+}
+
+.isi-container-section-1 h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.isi-container-section-1 h1 span {
+    color: #052659;
+}
+
+.isi-container-section-1 p {
+    font-size: 1rem;
+    color: #052659;
+}
+
+/* BUTTON */
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}       
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #781ba6;
+    color: white;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.button a:hover {
+    background-color: #8820bc;
+}
+
+.button a i {
+    font-size: 1.2rem;
+    color:#ffff;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.isi-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    color: black;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgb(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.isi-card h2 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.isi-card p{
+    font-size: 1.1rem;
+}
+
+.isi-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 1px 10px rgb(0, 0, 0, 0.5);
+}
+
+.isi-card i {
+    font-size: 3rem;
+}
+
+/* BISA DI GANTI PER ICON */
+.container-card .isi-card:nth-child(1) i {
+    color: #FF4D4D;
+}
+.container-card .isi-card:nth-child(2) i {
+    color: #FFB000;
+}
+.container-card .isi-card:nth-child(3) i {
+    color: #10B981;
+}
+.container-card .isi-card:nth-child(4) i {
+    color: #3B82F6;
+}
+
+#what {
+    text-align: center;
+    font-size: 3rem;
+    color: #051525;
+}
+
+.container-card-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
+    gap: 2rem;
+}
+
+.isi-card-2 {
+    display: grid;
+    grid-column: span 1;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.isi-card-2 img {
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+
+.isi-card-2 a {
+    display: inline-block;
+    font-size: 3rem;
+    justify-self: flex-end;
+    margin: 0 2rem;
+    color: var(--navbar);
+    transition: 0.5s ease all;
+}
+
+.isi-card-2 a:hover {
+    transform: translateY(-10px);
+}
+
+.container-card-2 .isi-card-2:nth-child(1) i {
+    color: #FF4D4D;
+}
+.container-card-2 .isi-card-2:nth-child(2) i {
+    color: #FFB000;
+}
+.container-card-2 .isi-card-2:nth-child(3) i {
+    color: #10B981;
+}
+.container-card-2 .isi-card-2:nth-child(4) i {
+    color: #3B82F6;
+}
+
+.container-talk {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.isi-talk {
+    padding: 1rem 15%;
+    background-color: #052659;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.isi-talk img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.isi-talk {
+    color: white;
+}
+
+.isi-talk a {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    background-color: #316dc8;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.isi-talk a:hover{
+    background-color: #295aa4;
+}
+
+.judul-talk h2 span {
+    color: #4286ed;
+}
+
+footer {
+    margin-top: 4rem;
+}
+.container-footer {
+    gap: 2rem;
+    width: 100%;
+    background-color: #051525;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-footer h2 {
+    margin-top: 1rem;
+}
+
+.container-footer p {
+    color: rgb(255, 255, 255, 0.2);
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    font-weight: 300;
+}

@@ -338,11 +338,6 @@ nav ul li:nth-child(5) a i {
     margin-top: 5rem;
 }
 
-.judul-web-app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .judul-web-app h2 span {
     color: #FF4D4D;
 }
@@ -356,49 +351,13 @@ nav ul li:nth-child(5) a i {
 }
 
 .isi-web-app p {
-    font-size: 1.1rem ;
+    font-size: 1.1rem;
 }
 
 .judul-web-app img {
     width: 80%;
     height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 

@@ -520,12 +520,20 @@ footer {
         justify-content: center;
         padding: 1rem 2rem;
         width: 100%;
-        height: 400px;
+        height: 100%;
     }
 
     .judul-web-app {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .isi-web-app h2 {
         text-align: center;
     }
 
@@ -537,11 +545,11 @@ footer {
     }
 
     .judul-web-app h2 {
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
     }
 
-    .judul-web-app p {
+    .isi-web-app p {
         font-size: 1rem;
     }
 }

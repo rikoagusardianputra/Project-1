@@ -431,12 +431,15 @@ footer {
     body {
         -webkit-text-size-adjust: 100%;
     }
-    /* header {
+    header {
         display: flex;
         flex-direction: column;
         background-color: var(--navbar);
-        height: 300px;
-    } */
+    }
+
+    nav {
+        display: none;
+    }
 
     .container-section-1 {
         display: flex;

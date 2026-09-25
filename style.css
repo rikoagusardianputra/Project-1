@@ -82,7 +82,8 @@ nav ul li:nth-child(5) a i {
 /* MAIN */
 
 .container-section-1 {
-    height: 90vh;
+    min-height: 100dvh;
+    height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -421,6 +422,9 @@ footer {
 /* NAVBAR RESPONSIF */
 
 @media screen and (max-width: 640px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
     /* header {
         display: flex;
         flex-direction: column;
@@ -483,13 +487,25 @@ footer {
     .container-card-2 {
         display: flex;
         flex-direction: column;
+        padding: 1.5rem 1.5rem;
+        width: 100%;
+        gap: 1.2rem;
     }
 
     .isi-card-2 {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         flex-direction: column;
         padding: 1rem 2rem;
         width: 100%;
+        height: 100%;
+    }
+
+    .isi-card-2:nth-child(2) img {
+        width: 200px;
+        max-width: 100%;
     }
 
     .isi-talk {

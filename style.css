@@ -421,7 +421,13 @@ footer {
 
 /* NAVBAR RESPONSIF */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     body {
         -webkit-text-size-adjust: 100%;
     }

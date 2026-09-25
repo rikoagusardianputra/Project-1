@@ -221,6 +221,8 @@ nav ul li:nth-child(5) a i {
     color: #051525;
 }
 
+/* container card 2 */
+
 .container-card-2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -412,3 +414,115 @@ footer {
     font-size: 1rem;
     font-weight: 300;
 }
+
+
+/* RESPONSIF */
+
+/* NAVBAR RESPONSIF */
+
+@media screen and (max-width: 640px) {
+    /* header {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--navbar);
+        height: 300px;
+    } */
+
+    .container-section-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: auto;
+    }
+
+    .isi-container-section-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-section-1 img {
+        width: 300px;
+    }
+
+    #ideas {
+        font-size: 1rem;
+    }
+
+    .container-section-1 h1 {
+        font-size: 3rem;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .button a {
+        width: 100%;
+    }
+
+    .button a:nth-child(2) i {
+        display: none;
+    }
+
+    .container-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+
+    #what {
+        font-size: 2rem;
+    }
+
+    .container-card-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .isi-card-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .isi-talk {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        width: 100%;
+        height: 400px;
+    }
+
+    .judul-web-app {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .judul-web-app img,
+    .judul-web-app:nth-child(2) img,
+    .judul-web-app:nth-child(3) img,
+    .judul-web-app:nth-child(4) img {
+        display: none;
+    }
+
+    .judul-web-app h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .judul-web-app p {
+        font-size: 1rem;
+    }
+}
+
